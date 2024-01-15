@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html> 
+   <head> 
+     <meta charset="utf-8"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+     <title>Hotel-Bootstrap</title> 
+     <link rel="stylesheet" href="style.css">
+     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head> 
+   <body> 
+
+        <header class="header">
+            <i class="fa-solid fa-hotel"></i>
+        </header>
+
+        <main>
+            <section class="home" style="display: flex;">
+                <div class="banner">
+                    <h1>SINTA O CONFORTO ACOLHEDOR DE NOSSAS HOSPEDAGENS</h1>
+                    <p>Hospede-se em nossos hoteis com quartos a partir de R$ 100,00.</p>
+                    <button>Saiba Mais</button>
+                </div>
+
+                <div class="image">
+                    <img src="assets/architecture-6646154_1280.jpg" style="max-width: 45em;" alt="">
+                </div>
+            </section>
+
+            <section class="about">
+                <h1>PORQUE SE HOSPEDAR EM NOSSOS HOTEIS?</h1>
+                <div class="cards" style="display: flex;">
+                        <div class="card" style="display: flex; flex-direction: row;">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                            <div class="text-card">
+                                <h2>Delicioso café da manhã</h2>
+                                <p>Incluso em todas as diárias</p>
+                            </div>
+                        </div>
+                        <div class="card" style="display: flex; flex-direction: row;">
+                            <i class="fa-solid fa-location-dot"></i>
+                                <div class="text-card">
+                                <h2>Fácil <a href=""></a>cesso</h2>
+                                <p>Perto dos principais pontos turísticos</p>
+                            </div>
+                        </div>
+                </div>      
+                <div class="rooms">
+                    <h2>NOSSOS QUARTOS</h2>
+                    <div class="images" style="display: flex;">
+                        <div class="room">
+                            <img class="quartos" src="assets/quarto (1).jpg" alt=""> 
+                            <p>Suíte Solteiro</p>
+                        </div>
+                        <div class="room">
+                            <img class="quartos" src="assets/quarto (2).jpg" alt="">
+                            <p>Suíte Casal</p>
+                        </div>
+                        <div class="room">
+                            <img class="quartos" src="assets/quarto (3).jpg" alt="">
+                            <p>Suíte Master</p>
+                        </div>
+                    </div>
+                </div>  
+            </section>
+
+            <section class="reserve"  style="display: flex;">
+                <div class="banner">
+                    <h2>FAÇA SUA RESERVA</h2>
+                    <p>
+                       Entre em contato conosco informando as datas desajadas. 
+                       <br>
+                       Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva.
+                    </p>
+                </div>
+                <form class="form"  style="display: flex;">
+                    <div>    
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="nome"> <br>
+                        <label for="dataIn">Data de entrada:</label>
+                        <input type="date" id="dataIn" name="dataIn">
+                        <label for="obs">Observações:</label>
+                        <textarea name="obs" id="obs" cols="30" rows="10" style="height: 2em;"></textarea>
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+                        <label for="dataOut">Data de saída:</label>
+                        <input type="date" id="dataOut" name="dataOut">
+                        <div>
+                            <label for="adultos">Adultos:</label>
+                            <input type="number" id="adultos" name="adultos">
+                            <label for="criancas">Criancas:</label>
+                            <input type="number" id="criancas" name="criancas">
+                        </div>
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </section>
+
+        </main>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script> 
+    </body> 
+</html>

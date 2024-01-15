@@ -1,0 +1,8 @@
+.quartos {
+    max-width: 20em;
+    max-height: 13em;
+}
+
+label {
+    display: block;
+}
