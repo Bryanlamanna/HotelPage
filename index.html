@@ -15,30 +15,30 @@
             <i class="fa-solid fa-hotel"></i>
         </header>
 
-        <main>
-            <section class="home" style="display: flex;">
-                <div class="banner">
+        <main class="container">
+            <section class="home row" style="display: flex;">
+                <div class="banner col-md-5">
                     <h1>SINTA O CONFORTO ACOLHEDOR DE NOSSAS HOSPEDAGENS</h1>
                     <p>Hospede-se em nossos hoteis com quartos a partir de R$ 100,00.</p>
                     <button>Saiba Mais</button>
                 </div>
 
-                <div class="image">
-                    <img src="assets/architecture-6646154_1280.jpg" style="max-width: 45em;" alt="">
+                <div class="image col-md-6">
+                    <img src="assets/architecture-6646154_1280.jpg" style="max-width: 40em;" alt="">
                 </div>
             </section>
 
             <section class="about">
-                <h1>PORQUE SE HOSPEDAR EM NOSSOS HOTEIS?</h1>
-                <div class="cards" style="display: flex;">
-                        <div class="card" style="display: flex; flex-direction: row;">
+                <h1 class="row justify-content-center">PORQUE SE HOSPEDAR EM NOSSOS HOTEIS?</h1>
+                <div class="cards row">
+                        <div class="card col-md-6" style="display: flex; flex-direction: row;">
                             <i class="fa-solid fa-mug-saucer"></i>
                             <div class="text-card">
                                 <h2>Delicioso café da manhã</h2>
                                 <p>Incluso em todas as diárias</p>
                             </div>
                         </div>
-                        <div class="card" style="display: flex; flex-direction: row;">
+                        <div class="card col-md-6" style="display: flex; flex-direction: row;">
                             <i class="fa-solid fa-location-dot"></i>
                                 <div class="text-card">
                                 <h2>Fácil <a href=""></a>cesso</h2>
@@ -46,18 +46,19 @@
                             </div>
                         </div>
                 </div>      
+
                 <div class="rooms">
-                    <h2>NOSSOS QUARTOS</h2>
-                    <div class="images" style="display: flex;">
-                        <div class="room">
+                    <h2 class="row justify-content-center">NOSSOS QUARTOS</h2>
+                    <div class="images row" style="display: flex;">
+                        <div class="room col-md-4">
                             <img class="quartos" src="assets/quarto (1).jpg" alt=""> 
                             <p>Suíte Solteiro</p>
                         </div>
-                        <div class="room">
+                        <div class="room col-md-4">
                             <img class="quartos" src="assets/quarto (2).jpg" alt="">
                             <p>Suíte Casal</p>
                         </div>
-                        <div class="room">
+                        <div class="room col-md-4">
                             <img class="quartos" src="assets/quarto (3).jpg" alt="">
                             <p>Suíte Master</p>
                         </div>
@@ -65,8 +66,8 @@
                 </div>  
             </section>
 
-            <section class="reserve"  style="display: flex;">
-                <div class="banner">
+            <section class="reserve row"  style="display: flex;">
+                <div class="banner col-md-5">
                     <h2>FAÇA SUA RESERVA</h2>
                     <p>
                        Entre em contato conosco informando as datas desajadas. 
@@ -74,8 +75,8 @@
                        Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva.
                     </p>
                 </div>
-                <form class="form"  style="display: flex;">
-                    <div>    
+                <form class="form col-md-7 row"  style="display: flex;">
+                    <div class="col-md-6">    
                         <label for="name">Nome:</label>
                         <input type="text" id="name" name="nome"> <br>
                         <label for="dataIn">Data de entrada:</label>
@@ -83,7 +84,7 @@
                         <label for="obs">Observações:</label>
                         <textarea name="obs" id="obs" cols="30" rows="10" style="height: 2em;"></textarea>
                     </div>
-                    <div>
+                    <div class="col-md-6">
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" name="email">
                         <label for="dataOut">Data de saída:</label>
