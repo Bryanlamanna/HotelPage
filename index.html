@@ -11,7 +11,7 @@
    </head> 
    <body> 
 
-        <header class="header">
+        <header class="header container-fluid">
             <i class="fa-solid fa-hotel"></i>
         </header>
 
@@ -75,31 +75,34 @@
                        Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva.
                     </p>
                 </div>
-                <form class="form col-md-7 row"  style="display: flex;">
-                    <div class="col-md-6">    
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="nome"> <br>
-                        <label for="dataIn">Data de entrada:</label>
+                <form class="form col-md-7 row"  >
+                    <div class="col-md-6" style="display: flex; flex-direction: column;">    
+                        <label>Nome:</label>
+                        <input type="text" id="name" name="nome"> 
+                        <label>Data de entrada:</label>
                         <input type="date" id="dataIn" name="dataIn">
-                        <label for="obs">Observações:</label>
+                        <label>Observações:</label>
                         <textarea name="obs" id="obs" cols="30" rows="10" style="height: 2em;"></textarea>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="display: flex; flex-direction: column;">
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" name="email">
                         <label for="dataOut">Data de saída:</label>
                         <input type="date" id="dataOut" name="dataOut">
-                        <div>
+                        <div style="margin-top: 2em; margin-bottom: 1em;">
                             <label for="adultos">Adultos:</label>
-                            <input type="number" id="adultos" name="adultos">
+                            <input type="number" id="adultos" name="adultos" style="width: 3em;">
+                            <div>
                             <label for="criancas">Criancas:</label>
-                            <input type="number" id="criancas" name="criancas">
+                            <input type="number" id="criancas" name="criancas" style="width: 3em;">
+                            </div>
                         </div>
                         <button>Enviar</button>
                     </div>
                 </form>
             </section>
 
+            
         </main>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script> 
     </body> 
