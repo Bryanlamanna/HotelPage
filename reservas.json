@@ -1,0 +1,14 @@
+{
+    "reserva":[
+        {
+            "id": 1,
+            "nome": "João",
+            "dataIn": "10/10/2022",
+            "obs": "nada",
+            "email": "email",
+            "dataOut": "10/10/2022",
+            "adultos": 2,
+            "criancas": 0
+        }
+    ]
+}   

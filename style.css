@@ -71,3 +71,34 @@ main {
 h2 {
     font-size: medium;
 }
+
+.list {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserva {
+    
+    margin-top: 1em;
+    padding: 1em;
+    display: flex;
+    
+    background-color: rgba(57, 122, 196, 0.442);
+    width: 50%;
+    height: 20vh;
+    border-radius: 4px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.27);
+}
+
+.reserva label {
+    margin: 0;
+    font-size: small;
+    font-weight: 700;
+}
+
+.reserva * {
+    margin: 0;
+}

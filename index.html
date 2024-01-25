@@ -75,7 +75,7 @@
                        Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva.
                     </p>
                 </div>
-                <form class="form col-md-7 row"  >
+                <form class="form col-md-7 row"  action="localhost:3000/reserva" method="POST">
                     <div class="col-md-6" style="display: flex; flex-direction: column;">    
                         <label>Nome:</label>
                         <input type="text" id="name" name="nome"> 
@@ -99,7 +99,7 @@
                                 <input type="number" id="criancas" name="criancas" style="width: 3em;">
                             </div>
                         </div>
-                        <button>Enviar</button>
+                        <button type="submit">Enviar</button>
                     </div>
                 </form>
             </section>
