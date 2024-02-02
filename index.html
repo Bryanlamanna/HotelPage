@@ -78,7 +78,7 @@
                        Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva.
                     </p>
                 </div>
-                <form class="form col-md-7 row"  action="localhost:3000/reserva" method="POST">
+                <form class="form col-md-7 row" action="http://localhost:3000/reserva" method="POST" id="reservationForm">
                     <div class="col-md-6" style="display: flex; flex-direction: column;">    
                         <label>Nome:</label>
                         <input type="text" id="name" name="nome"> 
@@ -102,13 +102,15 @@
                                 <input type="number" id="criancas" name="criancas" style="width: 3em;">
                             </div>
                         </div>
-                        <button type="submit">Enviar</button>
+                        <button type="button" onclick="submitForm()">Enviar</button>
                     </div>
                 </form>
+            
             </section>
 
             
         </main>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script> 
+    <script src="script.js"></script>
     </body> 
 </html>
